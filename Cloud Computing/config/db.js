@@ -1,9 +1,9 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('../path/to/serviceAccountKey.json');
+const serviceAccount = require('./serviceAccountKey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  storageBucket: "your-bucket-name.appspot.com"
+  storageBucket: process.env.BUCKET
 });
 
 const db = admin.firestore();
