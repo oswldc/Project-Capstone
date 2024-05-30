@@ -12,12 +12,25 @@ const createLevel = async (req, res) => {
 
 const getLevels = async (req, res) => {
   try {
-    const levels = await db.collection('levels').get();
-    const levelsList = levels.docs.map(doc => doc.data());
-    res.status(200).send(levelsList);
+    const levels = [];
+    const querySnapshot = await db.collection('levels').get();
+    querySnapshot.forEach((doc) => {
+      levels.push({ id: doc.id, ...doc.data() });
+    });
+    res.status(200).send(levels);
   } catch (error) {
     res.status(500).send(error.message);
   }
 };
 
-module.exports = { createLevel, getLevels };
+const deleteLevel = async (req, res) => {
+  const { id } = req.params;
+  try {
+    await db.collection('levels').doc(id).delete();
+    res.status(200).send('Level deleted successfully');
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
+module.exports = { createLevel, getLevels, deleteLevel };
