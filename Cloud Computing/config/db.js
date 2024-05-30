@@ -3,7 +3,7 @@ const serviceAccount = require('./serviceAccountKey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  storageBucket: process.env.BUCKET
+  storageBucket: "gencaraproject.appspot.com"
 });
 
 const db = admin.firestore();
