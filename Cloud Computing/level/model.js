@@ -1,6 +1,6 @@
 class Level {
-    constructor(id, name, description) {
-      this.id = id;
+    constructor(idLevel, name, description) {
+      this.id = idLevel;
       this.name = name;
       this.description = description;
     }

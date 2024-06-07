@@ -1,7 +1,10 @@
 const { db, bucket } = require('../config/db');
+const { nanoid } = require('nanoid');
 
 const createExercise = async (req, res) => {
-  const { id, levelId, question } = req.body;
+  const { levelId} = req.body;
+  const idExercise = nanoid(5);
+  const { question } = req.file;
   try {
     await db.collection('exercises').doc(id).set({ levelId, question });
     res.status(201).send('Exercise created successfully');

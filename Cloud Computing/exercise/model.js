@@ -1,6 +1,6 @@
 class Exercise {
-    constructor(id, levelId, question) {
-      this.id = id;
+    constructor(idExercise, levelId, question) {
+      this.idExercise = idExercise;
       this.levelId = levelId;
       this.question = question;
     }

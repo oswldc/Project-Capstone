@@ -1,7 +1,11 @@
 const express = require('express');
-const { saveResult } = require('./handler');
+const { saveResultByUserId, getResultByUserId } = require('./handler');
 const router = express.Router();
 
-router.post('/', saveResult);
+// Endpoint untuk menyimpan hasil berdasarkan ID Pengguna
+router.post('/:userId', saveResultByUserId);
+
+// Endpoint untuk mendapatkan hasil berdasarkan ID Pengguna
+router.get('/:userId', getResultByUserId);
 
 module.exports = router;

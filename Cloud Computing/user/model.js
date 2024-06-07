@@ -1,6 +1,6 @@
 // Example model for user
 class User {
-    constructor(uid, name, email) {
+    constructor(uid, name, email, password) {
       this.uid = uid;
       this.name = name;
       this.email = email;
