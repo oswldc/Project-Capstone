@@ -1,9 +1,9 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./serviceAccountKey.json');
+const serviceAccount = require('./ServiceAccountKeyGencaraApp.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  storageBucket: "gencaraproject.appspot.com"
+  storageBucket: "gencarabucket"
 });
 
 const db = admin.firestore();
