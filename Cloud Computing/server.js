@@ -9,6 +9,7 @@ const exerciseRoutes = require('./exercise/routes');
 const mediaRoutes = require('./media/routes');
 const dictionaryRoutes = require('./dictionary/routes');
 const resultRoutes = require('./result/routes');
+const progressRoutes = require('./progress/routes');
 
 app.use(bodyParser.json());
 
@@ -18,6 +19,7 @@ app.use('/exercises', exerciseRoutes);
 app.use('/media', mediaRoutes);
 app.use('/dictionary', dictionaryRoutes);
 app.use('/results', resultRoutes);
+app.use('/progress', progressRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
