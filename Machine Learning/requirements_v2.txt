@@ -1,0 +1,9 @@
+firebase_admin==5.3.0
+keras==2.15.0
+numpy==1.25.2
+opencv_python==4.8.0
+opencv_python_headless==4.8.0
+PIL==9.4.0
+protobuf==3.20.3
+tensorflow==2.15.0
+tensorflow_intel==2.15.0
