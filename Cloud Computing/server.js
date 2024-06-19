@@ -1,26 +1,26 @@
-require('dotenv').config();
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
+const app = express();
+const port = process.env.PORT || 3000;
+
+const userRoutes = require('./user/routes');
+const levelRoutes = require('./level/routes');
+const exerciseRoutes = require('./exercise/routes');
+const mediaRoutes = require('./media/routes');
+const dictionaryRoutes = require('./dictionary/routes');
+const resultRoutes = require('./result/routes');
+const progressRoutes = require('./progress/routes');
 
 app.use(bodyParser.json());
 
-// Routes
-const userRoutes = require('./routes/users');
-const levelRoutes = require('./routes/levels');
-const exerciseRoutes = require('./routes/exercises');
-const mediaRoutes = require('./routes/media');
-const dictionaryRoutes = require('./routes/dictionary');
-const resultRoutes = require('./routes/results');
+app.use('/users', userRoutes);
+app.use('/levels', levelRoutes);
+app.use('/exercises', exerciseRoutes);
+app.use('/media', mediaRoutes);
+app.use('/dictionary', dictionaryRoutes);
+app.use('/results', resultRoutes);
+app.use('/progress', progressRoutes);
 
-app.use('/api/users', userRoutes);
-app.use('/api/levels', levelRoutes);
-app.use('/api/exercises', exerciseRoutes);
-app.use('/api/media', mediaRoutes);
-app.use('/api/dictionary', dictionaryRoutes);
-app.use('/api/results', resultRoutes);
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

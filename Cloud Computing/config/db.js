@@ -1,13 +1,12 @@
-const mysql = require('mysql2');
+const admin = require('firebase-admin');
+const serviceAccount = require('./ServiceAccountKeyGencaraApp.json');
 
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'your_database_user',
-  password: 'your_database_password',
-  database: 'sign_language_learning',
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  storageBucket: "gencarabucket"
 });
 
-module.exports = pool.promise();
+const db = admin.firestore();
+const bucket = admin.storage().bucket();
+
+module.exports = { db, bucket };
