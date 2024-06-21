@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">GENCARA</string>
+    <string name="hello">Hello,</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile">Profile</string>
+    <string name="language">Language</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about">About Gencara</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+    <string name="username">Username</string>
+    <string name="user_email">user@email.com</string>
+    <string name="learn">Let\'s start learning!</string>
+    <string name="searchbar_hint">What do you want to practice?</string>
+    <string name="practice">Practice</string>
+    <string name="hint">Sign Name</string>
+    <string name="logo">Logo</string>
+    <string name="title_welcome">Welcome to Gencara</string>
+    <string name="sub_title_welcome">Learning BISINDO is fun and exciting!</string>
+    <string name="web_client_id">145022948142-j77pg05468o1onou6t1ckdhlnn0qi5t4.apps.googleusercontent.com</string>
+    <string name="google">Continue with Google</string>
+    <string name="max_name_length_error">Maximum 15 characters</string>
+    <string name="profile_update_failed">Profile update failed</string>
+    <string name="profile_updated">Profile updated successfully</string>
+
+    <string-array name="data_menu">
+        <item>Alphabet</item>
+        <item>Food</item>
+        <item>Sport</item>
+        <item>Hobby</item>
+        <item>Job</item>
+        <item>Clothes</item>
+        <item>Game</item>
+        <item>Size</item>
+        <item>Feelings</item>
+        <item>Position</item>
+        <item>Object</item>
+        <item>Time</item>
+        <item>Vehicle</item>
+        <item>Family</item>
+        <item>Animal</item>
+    </string-array>
+
+    <integer-array name="data_icon">
+        <item>@drawable/alfabet</item>
+        <item>@drawable/makanan</item>
+        <item>@drawable/olahraga</item>
+        <item>@drawable/hobi</item>
+        <item>@drawable/pekerjaan</item>
+        <item>@drawable/pakaian</item>
+        <item>@drawable/permainan</item>
+        <item>@drawable/ukuran</item>
+        <item>@drawable/perasaan</item>
+        <item>@drawable/posisi</item>
+        <item>@drawable/objek</item>
+        <item>@drawable/waktu</item>
+        <item>@drawable/kendaraan</item>
+        <item>@drawable/keluarga</item>
+        <item>@drawable/hewan</item>
+    </integer-array>
+
+    <string-array name="data_alphabet_name">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <integer-array name="data_alphabet">
+        <item>@drawable/a</item>
+        <item>@drawable/b</item>
+        <item>@drawable/c</item>
+        <item>@drawable/d</item>
+        <item>@drawable/e</item>
+        <item>@drawable/f</item>
+        <item>@drawable/g</item>
+        <item>@drawable/h</item>
+        <item>@drawable/i</item>
+        <item>@drawable/j</item>
+        <item>@drawable/k</item>
+        <item>@drawable/l</item>
+        <item>@drawable/m</item>
+        <item>@drawable/n</item>
+        <item>@drawable/o</item>
+        <item>@drawable/p</item>
+        <item>@drawable/q</item>
+        <item>@drawable/r</item>
+        <item>@drawable/s</item>
+        <item>@drawable/t</item>
+        <item>@drawable/u</item>
+        <item>@drawable/v</item>
+        <item>@drawable/w</item>
+        <item>@drawable/x</item>
+        <item>@drawable/y</item>
+        <item>@drawable/z</item>
+    </integer-array>
+
+    <string-array name="data_question">
+        <item>Question 1</item>
+        <item>Question 2</item>
+        <item>Question 3</item>
+        <item>Question 4</item>
+        <item>Question 5</item>
+        <item>Question 6</item>
+        <item>Question 7</item>
+        <item>Question 8</item>
+        <item>Question 9</item>
+        <item>Question 10</item>
+    </string-array>
+</resources>

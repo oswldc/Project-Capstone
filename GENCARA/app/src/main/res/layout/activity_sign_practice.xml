@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.practice.SignPracticeActivity"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:src="@drawable/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_title_sign_practice"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/practice"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/not_so_black"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/inter_bold"/>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/define_roundedimageview"
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_sign_practice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.20"/>
+
+    <TextView
+        android:id="@+id/tv_sign_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/not_so_black"
+        android:fontFamily="@font/inter_bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/define_roundedimageview"
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@id/tv_sign_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.30"/>
+
+    <EditText
+        android:id="@+id/et_detection_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/hint"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/not_so_black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/iv_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <ImageButton
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:src="@drawable/btn_prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_camera"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:src="@drawable/btn_camera"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_next"
+        app:layout_constraintStart_toEndOf="@id/btn_prev"/>
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:src="@drawable/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_camera"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

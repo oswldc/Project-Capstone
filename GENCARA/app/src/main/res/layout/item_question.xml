@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_question"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:backgroundTint="@color/baby_pink"
+    android:contentDescription="@string/practice"
+    android:gravity="start"
+    android:layout_gravity="center_horizontal"
+    android:textColor="@color/not_so_black"
+    android:textSize="18sp"
+    android:fontFamily="@font/inter_regular"/>

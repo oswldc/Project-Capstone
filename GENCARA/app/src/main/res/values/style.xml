@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeOverlay.BottomNavigationView.Purple" parent="">
+        <item name="itemIconTint">@color/purple</item>
+        <item name="itemTextColor">@color/purple</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/not_so_black</item>
+    </style>
+</resources>
